@@ -1,0 +1,41 @@
+.layout-cabecalho{
+    height: 120px;
+
+    background-color: #1c1c1c;
+
+    display: flex;
+    align-items: center;  
+}
+
+.layout-cabecalho img{
+   width: 100px;
+}
+
+.layout-cabecalho h1{
+    color: #E30613;
+    font-style: italic;
+    display: inline;
+    margin-left: 50px;
+    
+}
+
+.layout-menu-cabecalho{
+    list-style-type: none;
+    margin-right: 200px;
+}
+
+
+.layout-menu-cabecalho ul li{
+    display: inline;
+    
+    margin-right: 30px;
+
+}
+
+.layout-menu-cabecalho > ul li a {
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-weight: bold;
+}
