@@ -4,13 +4,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    
+    align-items: center; 
 
     color: #ffffff;
     background-color: #1c1c1c; 
@@ -64,4 +58,36 @@ body{
 
     display: flex;
     align-items: center;  
+}
+
+.layout-principal{
+   background-color: #000000;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.container-principal{
+    margin: 15vh auto;
+    margin-left: 25%;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-principal{
+    margin-left: 30px;
+}
+
+.texto-principal > h1{
+    color: #E30613;
+
+    font-style: italic;
+}
+
+.texto-principal > p{
+    color: #ffffff;
+
+    font-size: 2em;
 }
