@@ -61,7 +61,72 @@
     <!-- DEPOIMENTOS -->
     <section class="layout-depoimentos">
         <div class="titulo-depoimento">
-            <h1>Depoimentos de nossos clientes:</h1>
+            <div class="slideshow-container"><!--layout-carrossel-->
+                <div class="meusSlides passa" >
+                    <div class="imagem">
+                        <img src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="">
+                    </div>
+                    <div class="texto">
+                        <p>333333333333333Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias beatae ratione, iusto aperiam esse ex earum iure aliquid dolorum ea nesciunt sint natus quaerat nulla quod maiores voluptates tempora? Fuga.</p>
+                    </div>
+                </div>
+                <div class="meusSlides passa" >
+                    <div class="imagem">
+                        <img src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="">
+                    </div>
+                    <div class="texto">
+                        <p>1111111111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias beatae ratione, iusto aperiam esse ex earum iure aliquid dolorum ea nesciunt sint natus quaerat nulla quod maiores voluptates tempora? Fuga.</p>
+                    </div>
+                </div>
+                <div class="meusSlides passa" >
+                    <div class="imagem">
+                        <img src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="">
+                    </div>
+                    <div class="texto">
+                        <p>2222222222222222Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias beatae ratione, iusto aperiam esse ex earum iure aliquid dolorum ea nesciunt sint natus quaerat nulla quod maiores voluptates tempora? Fuga.</p>
+                    </div>
+                </div>
+        
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        
+              <script>
+                let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("meusSlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "flex";
+              dots[slideIndex-1].className += " active";
+            }
+              </script>
         </div>
         <hr class="linha-horizontal">
         <div class="container-principal row">
