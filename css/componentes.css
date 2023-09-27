@@ -1,0 +1,94 @@
+.layout-cabecalho a {
+    text-decoration: none;
+ }
+ 
+ .layout-cabecalho img {
+     width: 120px;
+ }
+
+ .layout-cabecalho h1 {
+    margin-left: 10px;
+
+    color: #E30613;
+
+    font-style: italic;
+}
+
+.layout-cabecalho a {
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.layout-cabecalho a:hover{
+    color: #E30613;
+}
+
+.texto-principal>h1 {
+    color: #E30613;
+
+    font-style: italic;
+}
+
+.texto-principal>p {
+    color: #ffffff;
+
+    font-size: 1.5em;
+}
+
+.titulo-depoimento {
+    color: #E30613;
+
+    font-style: italic;
+    text-align: center;
+}
+
+.depoimento>h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    
+    color: #1E9EE3;
+    
+    font-style: italic;
+}
+
+.depoimento__autor {
+    text-align: center;
+}
+
+.depoimento>blockquote {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    max-width: 80%;
+
+    text-align: center;
+    font-size: 1.25em;
+
+    color: #ffffff;
+}
+
+.info-empresa h3 {
+    margin-bottom: 15px;
+}
+
+.icons-container {
+    margin-top: 20px;
+}
+
+.icon-redes-sociais {
+    margin-right: 15px;
+
+    color: #E30613;
+    
+    font-size: 30px;
+}
+
+.rodape-logo>img {
+    max-width: 100px;
+}
