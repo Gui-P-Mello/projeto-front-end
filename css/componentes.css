@@ -92,3 +92,58 @@
 .rodape-logo>img {
     max-width: 100px;
 }
+
+.rodape-sobre{
+    display: flex;
+    align-items: center;
+
+    color: #e6e6e6;
+}
+
+.rodape-sobre h1{
+    color: #E30613;
+    font-style: italic;
+    text-align: center;
+}
+
+.rodape-sobre h2{
+    color: #1E9EE3;
+
+    font-style: italic;
+    text-align: center;
+}
+
+.rodape-sobre h5{
+    text-align: center;
+    font-style: italic;
+}
+
+.rodape-sobre blockquote{
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+}
+
+.rodape-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-sobre > blockquote::before{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    color: #e6e6e6;
+    font-size: 6em;
+    content: "\201C";
+}
+
+.rodape-sobre > blockquote::after{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    color: #e6e6e6;
+    font-size: 6em;
+    content: "\201D";
+}
