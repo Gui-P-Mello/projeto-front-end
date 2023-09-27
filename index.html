@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe Rocket</title>
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/componentes.css">
@@ -17,16 +18,19 @@
 </head>
 
 <body>
+    <!-- CABEÇALHO -->
     <header class="layout-cabecalho">
         <div class="logo">
-            <img src="./img/Team_Rocket_Logo.png" alt="Logo Equipe Rocket" width="100px">
-            <h1>TEAM ROCKET</h1>
+            <img src="./img/Team_Rocket_Logo.png" alt="Logo Equipe Rocket">
+            <h1>EQUIPE ROCKET</h1>
         </div>
         <nav>
             <a href="#">SOBRE NÓS</a>
         </nav>
     </header>
+    <!-- FIM CABEÇALHO -->
 
+    <!-- INÍCIO -->
     <section class="layout-principal">
         <div class="container-principal row">
             <div class="col-12 col-md-6">
@@ -40,46 +44,51 @@
             </div>
         </div>
     </section>
+    <!-- FIM INICIO -->
 
     <!-- Colocar carrossel usando API dos pokemons aqui -->
     <section class="layotu-carrossel">
-        <div class="container-carrossel">
+        <div class="container-principal">
             <h1>Espaço para o carrossel</h1>
         </div>
     </section>
     <!-- fim espaço carrossel -->
 
-
+    <!-- DEPOIMENTOS -->
     <section class="layout-depoimentos">
         <div class="titulo-depoimento">
             <h1>Depoimentos de nossos clientes:</h1>
         </div>
-        <div class="container-depoimentos">
-            <div class="depoimento">
+        <hr class="linha-horizontal">
+        <div class="container-principal row">
+            <div class="depoimento col-12 col-md-4">
                 <h4>Yongster Joey</h4>
                 <div class="depoimento__autor">
                     <img src="./img/youngster.png" alt="Youngster Joey">
                 </div>
+                <hr class="linha-horizontal">
                 <blockquote>
                     Não conseguia evoluir meu Rattata. Com os serviços da equipe rocket agora eu tenho um Raticate!
                     Aquele treinador na rota 5 vai se ver comigo agora!
                 </blockquote>
             </div>
-            <div class="depoimento">
+            <div class="depoimento col-12 col-md-4">
                 <h4>Bug Catcher Anthony</h4>
                 <div class="depoimento__autor">
                     <img src="./img/Bug_Catcher.png" alt="Bug Catcher Anthony">
                 </div>
+                <hr class="linha-horizontal">
                 <blockquote>
                     Finalmente eu consegui adicionar meu sexto Metapod no meu grupo depois de usar os serviços da Equipe
                     Rocket! Agora sou o maior Bug Catcher do bairro.
                 </blockquote>
             </div>
-            <div class="depoimento">
+            <div class="depoimento col-12 col-md-4">
                 <h4>Hiker Kenny</h4>
                 <div class="depoimento__autor">
                     <img src="./img/Hiker.png" alt="Hiker Kenny">
                 </div>
+                <hr class="linha-horizontal">
                 <blockquote>
                     Depois que meu Graveler usou Selfdestruct eu recorri aos serviços da Equipe Rocket para conseguir um
                     novo. Ótimo serviço.
@@ -87,8 +96,40 @@
             </div>
         </div>
     </section>
+    <!-- FIM DEPOIMENTO -->
 
+    <!-- RODAPÉ -->
+    <footer class="layout-rodape">
+        <div class="container-rodape">
+            <div class="info-empresa">
+                <div>
+                    <h3>Equipe Rocket</h3>
+                </div>
+                <div>
+                    <p><strong>Endereço:</strong> Game Corner de Celadon</p>
+                    <p><strong>Telefone:</strong> (11) 2276-2538</p>
+                    <p><strong>Email:</strong> contato@equiperocket.com</p>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <h3>Siga-nos!</h3>
+                <a href="#" target="_blank" class="btn btn-link"><i class="fab fa-facebook icon-redes-sociais"></i></a>
+                <a href="#" target="_blank" class="btn btn-link"><i class="fab fa-instagram icon-redes-sociais"></i></a>
+                <a href="#" target="_blank" class="btn btn-link"><i class="fab fa-linkedin icon-redes-sociais"></i></a>
+            </div>            
+            <div class="rodape-logo">
+                <img src="./img/Team_Rocket_Logo.png" alt="Logo Equipe Rocket">
+            </div>
+        </div>
+    </footer>
+    <!-- FIM RODAPÉ -->
 
+    <!-- COPYRIGHT -->
+    <footer class="copyright">
+        <p>&copy; 2023 Pokémon. &copy;1995 - 2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, &copy;Nintendo. - Made by
+            Grupo 01 FrontEnd Serratec</p>
+    </footer>
+    <!-- FIM COPYRIGHT -->
 
 </body>
 

@@ -84,15 +84,6 @@ body {
     align-items: center;
 }
 
-.container-carrossel {
-    margin: 15vh auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-}
-
 .container-carrossel>h1 {
     text-align: center;
 }
@@ -108,28 +99,84 @@ body {
     text-align: center;
 }
 
-.container-depoimentos {
-    margin: 15vh auto;
-    margin-top: -5px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-}
-
 .depoimento>h4 {
-    color: #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: #1E9EE3;
     font-style: italic;
+    
 }
 
-.depoimento>blockquote {
-    padding: 10px 60px 0 0;
+.depoimento__autor {
+    text-align: center;
+}
 
-    text-align: justify;
+.depoimento > blockquote {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    max-width: 80%;
+        
+    text-align: center;
     font-size: 1.25em;
 
     color: #ffffff;
+}
+
+.linha-horizontal{
+    border: none;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 30px auto;
+    max-width: 70%;
+}
+
+.layout-rodape{
+    margin-top: -95px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #000000;
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.info-empresa{
+    color: #e6e6e6;
+}
+
+
+.redes-sociais{
+    display: flex; /* Use display flex para alinhar verticalmente */
+    align-items: center; /* Alinhe verticalmente os elementos dentro de cada âncora */
+    justify-content: space-evenly;
+    margin-bottom: 10px; /* Adicione margem na parte inferior para espaçamento entre eles */
+}
+
+.icon-redes-sociais {
+    font-size: 30px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.rodape-logo > img{
+    max-width: 100px;
+}
+
+.copyright{
+    padding-top: 10px;
+    padding-bottom: 4px;
+    margin-bottom: -10px;
+
+    background-color: #484848;
+    color: #ffffff;
+
+    text-align: center;
 }
