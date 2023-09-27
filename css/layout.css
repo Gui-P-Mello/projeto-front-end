@@ -91,6 +91,8 @@ body {
 .layout-depoimentos {
     background-color: #1c1c1c;
     padding-top: 30px;
+    margin-bottom: -140px;
+    padding-bottom: 30px;
 }
 
 .titulo-depoimento {
@@ -107,26 +109,26 @@ body {
 
     color: #1E9EE3;
     font-style: italic;
-    
+
 }
 
 .depoimento__autor {
     text-align: center;
 }
 
-.depoimento > blockquote {
+.depoimento>blockquote {
     padding-top: 20px;
     padding-bottom: 25px;
     margin: 0 auto;
     max-width: 80%;
-        
+
     text-align: center;
     font-size: 1.25em;
 
     color: #ffffff;
 }
 
-.linha-horizontal{
+.linha-horizontal {
     border: none;
     height: 1px;
     background-color: #e6e6e6;
@@ -134,43 +136,62 @@ body {
     max-width: 70%;
 }
 
-.layout-rodape{
-    margin-top: -95px;
+.layout-rodape {
     padding-top: 20px;
     padding-bottom: 30px;
     background-color: #000000;
+    
 }
 
-.container-rodape{
+.container-rodape {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    margin: 0 auto;
+    max-width: 80%;  
 }
 
-.info-empresa{
+.info-empresa {
     color: #e6e6e6;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+.info-empresa h3 {
+    margin-bottom: 15px;
+}
 
-.redes-sociais{
-    display: flex; /* Use display flex para alinhar verticalmente */
-    align-items: center; /* Alinhe verticalmente os elementos dentro de cada âncora */
-    justify-content: space-evenly;
-    margin-bottom: 10px; /* Adicione margem na parte inferior para espaçamento entre eles */
+.redes-sociais {
+    color: #e6e6e6;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icons-container {
+    margin-top: 20px;
 }
 
 .icon-redes-sociais {
     font-size: 30px;
-    color: #007bff;
-    margin-right: 10px;
+    color: #E30613;
+    margin-right: 15px;
 }
 
-.rodape-logo > img{
+.rodape-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rodape-logo>img {
     max-width: 100px;
 }
 
-.copyright{
+.copyright {
     padding-top: 10px;
     padding-bottom: 4px;
     margin-bottom: -10px;
