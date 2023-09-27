@@ -53,14 +53,6 @@
     <!-- Colocar carrossel usando API dos pokemons aqui -->
     <section class="layotu-carrossel">
         <div class="container-principal">
-            <h1>Espaço para o carrossel</h1>
-        </div>
-    </section>
-    <!-- fim espaço carrossel -->
-
-    <!-- DEPOIMENTOS -->
-    <section class="layout-depoimentos">
-        <div class="titulo-depoimento">
             <div class="slideshow-container"><!--layout-carrossel-->
                 <div class="meusSlides passa" >
                     <div class="imagem">
@@ -97,36 +89,15 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
         
-              <script>
-                let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            // Next/previous controls
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            // Thumbnail image controls
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("meusSlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "flex";
-              dots[slideIndex-1].className += " active";
-            }
-              </script>
+              
+        </div>
+    </section>
+    <!-- fim espaço carrossel -->
+
+    <!-- DEPOIMENTOS -->
+    <section class="layout-depoimentos">
+        <div class="titulo-depoimento">
+           
         </div>
         <hr class="linha-horizontal">
         <div class="container-principal row">
@@ -204,7 +175,36 @@
             Grupo 01 FrontEnd Serratec</p>
     </footer>
     <!-- FIM COPYRIGHT -->
-
+    <script>
+        let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("meusSlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";
+      dots[slideIndex-1].className += " active";
+    }
+      </script>
 </body>
 
 </html>
