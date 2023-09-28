@@ -215,6 +215,16 @@ body {
 /* FIM RODAPÉ PAG SOBRE */
 
 /*PESQUISA*/
+.tipo{
+    font-size: 4rem;
+}
+.preco{
+    font-size: 10rem;
+}
+
+.descricao{
+    font-size: 1.5rem;
+}
 .pesquisa{
     margin: 0;
 }
@@ -245,19 +255,15 @@ body {
 .pokemon__image{
     margin: 0;
     max-width: 100%;
+    max-height: 100%;
 }
 
 #pokemon__form input{
     margin-bottom: 20px;
 }
-.tipo{
-    font-size: 4rem;
-}
-.preco{
-    font-size: 10rem;
+
+section{
+    
 }
 
-.descricao{
-    font-size: 1.5rem;
-}
 /*FIM PESQUISA*/
