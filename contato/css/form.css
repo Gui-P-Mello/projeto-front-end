@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
+}
+
+.h1{
+    color: red;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;   
+}
+
+.myBackground {
+    background-image: url(/IMG/backgroundForm.png);
+    background-size: cover;
+    color: white;
+}
+
+.layout-cabecalho {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.layout-cabecalho img {
+    width: 100px;
+}
+
+.layout-cabecalho h1#topo {
+    margin-left: 10px;
+    color: #E30613;
+    font-style: italic;
+    font-size:medium;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 10vh;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.texto-principal>h1#topo {
+    color: #E30613;
+
+    font-style: italic;
+}
+
+.texto-principal>p {
+    color: #ffffff;
+
+    font-size: 2em;
+}
