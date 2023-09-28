@@ -196,3 +196,15 @@
     content: "\201D";
 }
 /* FIM RODAPÉ PAG SOBRE */
+
+/*PESQUISA*/
+.pesquisa{
+    background-color: #1c1c1c;
+}
+.produtos h1{
+    color: #E30613;
+    font-style: italic;
+}
+.pokemon__data{
+    color: white;
+}

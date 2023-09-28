@@ -213,3 +213,51 @@ body {
 }
 
 /* FIM RODAPÉ PAG SOBRE */
+
+/*PESQUISA*/
+.pesquisa{
+    margin: 0;
+}
+.produtos{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.pokemon__view{
+    text-align: center;
+    align-items: center;
+}
+.pokemon__portrait{
+    /* min-height: 163.92px;
+    min-width: 204.9px; */
+    height: 16vw;
+    width: 13vw;
+    background-image: url(../img/background.gif);
+    background-size: 13vw 16vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.pokemon__image{
+    margin: 0;
+    max-width: 100%;
+}
+
+#pokemon__form input{
+    margin-bottom: 20px;
+}
+.tipo{
+    font-size: 4rem;
+}
+.preco{
+    font-size: 10rem;
+}
+
+.descricao{
+    font-size: 1.5rem;
+}
+/*FIM PESQUISA*/
