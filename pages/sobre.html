@@ -23,26 +23,54 @@
 <body>
   <!-- CABEÇALHO -->
   <header class="layout-cabecalho">
-    <a href="http://127.0.0.1:5500/index.html">
+    <a href="../index.html">
       <div class="logo">
         <img src="../img/Team_Rocket_Logo.png" alt="Logo Equipe Rocket">
         <h1>EQUIPE ROCKET</h1>
       </div>
     </a>
     <nav>
-      <a href="http://127.0.0.1:5500/pages/sobre.html">SOBRE NÓS</a>
+      <a href="sobre.html">SOBRE NÓS</a>
     </nav>
   </header>
   <!-- FIM CABEÇALHO -->
 
-  <!-- Espaço para o Sobre nós -->
-  <section>
-    <h1>ESPAÇO PARA SOBRE NÓS</h1>
+  <!-- SOBRE NÓS -->
+  <section class="sobre-principal ">
+    <div class="container-sobre">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1>EQUIPE ROCKET</h1>
+          <h2>Sobre nós</h2>
+          <div class="sobre-texto">
+            <hr>
+            <h3>Quem somos e o que fazemos?</h3>
+            <p>
+              A Equipe Rocket é conhecida por sua incrível dedicação ao treinamento e ao mundo dos Pokémon. Com um
+              compromisso inabalável, eles se esforçam para aprimorar as habilidades de seus Pokémon e coletar itens
+              raros
+              de valor inestimável. Sua missão é proporcionar aos treinadores uma experiência única, oferecendo Pokémon
+              excepcionais e itens exclusivos, tornando-os verdadeiros destinos para aqueles que buscam enriquecer suas
+              aventuras. Ao fornecer acesso a Pokémon bem treinados e raros, bem como itens que são difíceis de
+              encontrar
+              em outro lugar, a Equipe Rocket se esforça para aprimorar a jornada dos treinadores, permitindo-lhes
+              alcançar seu potencial máximo como mestres Pokémon. Seu trabalho árduo e dedicação incansável ao mundo
+              Pokémon são verdadeiramente admiráveis e tornam a Equipe Rocket uma parte essencial da rica tapeçaria
+              deste
+              universo emocionante.
+            </p>
+          </div>
+        </div>
+        <div class="HQ col-12 col-md-6">
+          <img src="../img/Team_Rocket_HQ.png" width="90%">
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- Fim do espaço sobre nós -->
+  <!-- FIM SOBRE NÓS -->
 
   <!-- FORMULÁRIO -->
-  <section class="myBackground">
+  <section id="contrate" class="myBackground">
 
     <div class="d-flex justify-content-center">
       <h1 class="titulo-contato">SEJA UM TREINADOR POKEMON</h1>
@@ -102,24 +130,18 @@
   <!-- FIM DO FORMULÁRIO -->
 
   <!-- CONTATO -->
-  <section>
-    
-  </section>
-  <!-- FIM DO CONTATO -->
-
-  <!-- RODAPÉ -->
-  <footer class="layout-principal">
-    <div class="container-rodape-sobre">
-      <div class="rodape-sobre row">
+  <section class="layout-principal">
+    <div class="container-sobre">
+      <div class="lider-sobre row">
         <div class="col-12 col-md-6">
-          <div class="rodape-imagem">
+          <div class="lider-imagem">
             <img src="../img/Giovanni.png" alt="Giovanni" width="70%">
           </div>
           <h1>NOSSO LÍDER</h1>
           <h5>Giovanni</h5>
           <h3></h3>
         </div>
-        <div class="rodape-sobre-frase col-12 col-md-6">
+        <div class="col-12 col-md-6">
           <h2>Decolando na<br>velocidade da luz!</h2>
           <br>
           <blockquote>
@@ -130,13 +152,44 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- FIM DO CONTATO -->
+
+  <!-- RODAPÉ -->
+  <footer class="sobre-contato">
+    <div class="container-sobre">
+      <div class="sobre-informacoes row">
+        <div class="col-12 col-md-4">
+          <h1>Veja nossos Contatos</h1>
+          <p><strong>Endereço:</strong> Game Corner de Celadon</p>
+          <p><strong>Telefone:</strong> (11) 2276-2538</p>
+          <p><strong>Email:</strong> contato@equiperocket.com</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h1>Siga-nos nas nossas redes!</h1>
+          <div class="sobre-icons">
+            <a href="https://www.facebook.com/Pokemon/?locale=pt_BR" target="_blank" class="btn btn-link"><i
+                class="fab fa-facebook sobre-redes-sociais"></i></a>
+            <a href="https://www.instagram.com/Pokemon/" target="_blank" class="btn btn-link"><i
+                class="fab fa-instagram sobre-redes-sociais"></i></a>
+            <a href="https://www.linkedin.com/company/pokemon/" target="_blank" class="btn btn-link"><i
+                class="fab fa-linkedin sobre-redes-sociais"></i></a>
+          </div>
+        </div>
+        <div class="sobre-img col-12 col-md-4">
+          <img src="../img/Team_Rocket_Executives.png" alt="Executivos Equipe Rocket" width="80%">
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- FIM DO RODAPÉ -->
 
   <!-- COPYRIGHT -->
   <footer class="copyright">
-    <p>&copy; 2023 Pokémon. &copy;1995 - 2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, &copy;Nintendo. - Made by
-      Grupo 01 FrontEnd Serratec</p>
+    <p>&copy; 2023 Pokémon. &copy;1995 - <a href="https://www.pokemon.com/br/">2023 Nintendo/Creatures Inc./GAME FREAK
+        inc. TM,</a> &copy;<a href="https://www.nintendo.com/">Nintendo</a>. - Made by
+      <a href="https://github.com/Gui-P-Mello/projeto-front-end">Grupo 01 FrontEnd Serratec</a>
+    </p>
   </footer>
   <!-- FIM COPYRIGHT -->
 </body>
