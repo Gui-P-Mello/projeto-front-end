@@ -1,3 +1,5 @@
+/* CABEÇALHO */
+
 .layout-cabecalho a {
     text-decoration: none;
  }
@@ -12,6 +14,7 @@
     color: #E30613;
 
     font-style: italic;
+    font-weight: bolder;
 }
 
 .layout-cabecalho a {
@@ -27,6 +30,10 @@
     color: #E30613;
 }
 
+/* FIM CABEÇALHO */
+
+/* PRINCIPAL */
+
 .texto-principal>h1 {
     color: #E30613;
 
@@ -38,6 +45,10 @@
 
     font-size: 1.5em;
 }
+
+/* FIM PRINCIPAL */
+
+/* DEPOIMENTO */
 
 .titulo-depoimento {
     color: #E30613;
@@ -73,6 +84,10 @@
     color: #ffffff;
 }
 
+/* FIM DEPOIMENTO */
+
+/* RODAPÉ PÁG PRINCIPAL */
+
 .info-empresa h3 {
     margin-bottom: 15px;
 }
@@ -93,17 +108,45 @@
     max-width: 100px;
 }
 
+/* FIM RODAPÉ PÁG PRINCIPAL */
+
+/* FORMULÁRIO PÁG SOBRE */
+
+.myBackground {
+    color: white;
+    
+    background-image: url(/IMG/backgroundForm.png);
+    background-size: cover;
+}
+
+.titulo-contato{
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: red;
+    
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* FIM FORMULÁRIO PÁG SOBRE*/
+
+/* RODAPÉ PÁG SOBRE */
+
 .rodape-sobre{
     display: flex;
     align-items: center;
 
     color: #e6e6e6;
+
 }
 
 .rodape-sobre h1{
     color: #E30613;
     font-style: italic;
     text-align: center;
+    font-weight: bold;
 }
 
 .rodape-sobre h2{
@@ -111,17 +154,23 @@
 
     font-style: italic;
     text-align: center;
+    font-size: 2.5em;
+
+    padding-top: 10px;
+    
 }
 
 .rodape-sobre h5{
     text-align: center;
     font-style: italic;
+    padding-bottom: 20px;
 }
 
 .rodape-sobre blockquote{
     font-size: 1.2em;
     text-align: center;
     position: relative;
+    
 }
 
 .rodape-imagem{
@@ -130,20 +179,20 @@
     justify-content: center;
 }
 
-.rodape-sobre > blockquote::before{
+.rodape-sobre blockquote::before{
     position: absolute;
-    left: 0;
-    top: -30px;
+    left: -40px;
+    top: -60px;
     color: #e6e6e6;
     font-size: 6em;
     content: "\201C";
 }
 
-.rodape-sobre > blockquote::after{
+.rodape-sobre blockquote::after{
     position: absolute;
-    right: 0;
-    top: -30px;
+    right: -30px;
     color: #e6e6e6;
     font-size: 6em;
     content: "\201D";
 }
+/* FIM RODAPÉ PAG SOBRE */

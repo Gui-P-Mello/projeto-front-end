@@ -1,3 +1,5 @@
+/* CONFIGURAÇÕES GERAIS DO DOCUMENTO */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +8,10 @@
     font-size: 14px;
     box-sizing: border-box;
 }
+
+/* FIM DAS CONFIGURAÇÕES GERAIS */
+
+/* RESPONSIVIDADE DA FONTE ROBOTO DO GOOGLE FONTS */
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -63,3 +69,5 @@
 @media (max-width: 800px){
     
 }
+
+/* FIM DA RESPONSIVIDADE */

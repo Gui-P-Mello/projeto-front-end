@@ -1,3 +1,5 @@
+/* CABEÇALHO */
+
 .layout-cabecalho {
     width: 100%;
     height: 25vh;
@@ -10,17 +12,22 @@
     background-color: #1c1c1c;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-}
 
 .logo {
     height: 10vh;
     max-width: 80%;
-
+    
     display: flex;
     align-items: center;
+}
+
+/* FIM CABEÇALHO */
+
+/* LAYOUTS GERAIS */
+
+body {
+    width: 100%;
+    min-height: 100vh;
 }
 
 .layout-principal {
@@ -40,16 +47,75 @@ body {
     align-items: center;
 }
 
-.layout-carrossel {
-    display: flex;
-    align-items: center;
+/* FIM LAYOUTS GERAIS */
 
-    background-color: #e6e6e6;
-}
+/* CARROSSEL PÁG PRINCIPAL*/
 
-.container-carrossel>h1 {
-    text-align: center;
+.slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;   
+    background-color: black;    
 }
+.imagem img {
+    width: 100%;
+}
+.texto p {
+    height: 100%;
+    padding: 10%;
+    text-align: justify;
+    margin: 0 auto;
+    width:100%;
+    background-color: whitesmoke;
+}
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }  
+  /* On hover, add a black background color with a little bit see-through */
+  .anterior:hover, .proximo:hover {
+    background-color: rgba(144, 21, 21, 0.8);
+  }
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .passa {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* FIM CARROSSEL PÁG PRINCIPAL */
+
+
+/* LAYOUT DEPOIMENTOS */
 
 .layout-depoimentos {
     padding-top: 30px;
@@ -68,6 +134,10 @@ body {
     border: none;
     height: 1px;
 }
+
+/* FIM LAYOUT DEPOIMENTOS */
+
+/* LAYOUT RODAPÉ PAG PRINCIPAL */
 
 .layout-rodape {
     padding-top: 20px;
@@ -112,6 +182,10 @@ body {
     justify-content: center;
 }
 
+/* FIM LAYOUT RODAPÉ PAG PRINCIPAL */
+
+/* COPYRIGHT */
+
 .copyright {
     padding-top: 10px;
     padding-bottom: 4px;
@@ -123,71 +197,19 @@ body {
     color: #ffffff;
 }
 
+/* FIM COPYRIGHT */
 
-/*---------------------------------------------------------------------*/
+/* LAYOUT RODAPÉ PÁG SOBRE */
 
-*{
-    box-sizing: border-box;
+.container-rodape-sobre{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
 }
 
-.slideshow-container {
-    max-width: 100vw;
-    position: relative;
-    margin: auto;   
-    background-color: black;    
-}
-.imagem img {
-    width: 100%;
-}
-.texto p {
-    height: 100%;
-    padding: 10%;
-    text-align: justify;
-    margin: 0 auto;
-    width:100%;
-    background-color: whitesmoke;
-}
-.anterior, .proximo {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .proximo {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }  
-  /* On hover, add a black background color with a little bit see-through */
-  .anterior:hover, .proximo:hover {
-    background-color: rgba(144, 21, 21, 0.8);
-  }
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  .passa {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
+/* FIM RODAPÉ PAG SOBRE */
