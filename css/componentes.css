@@ -202,8 +202,9 @@
 /* FORMULÁRIO PÁG SOBRE */
 
 .myBackground {
-    color: #1c1c1c;
+    color: #e6e6e6;
     
+    background-color: #1c1c1c;
     background-image: url(/IMG/backgroundForm.png);
     background-size: cover;
 }
